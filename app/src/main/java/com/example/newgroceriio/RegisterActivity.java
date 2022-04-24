@@ -32,7 +32,7 @@ public class RegisterActivity extends AppCompatActivity {
 
     FirebaseAuth fAuth;
     User mUserObj;
-    boolean mVerify;
+    boolean mVerify; //verification boolean status
     FirebaseDatabase database;
     DatabaseReference mDatabase;
 
@@ -55,6 +55,7 @@ public class RegisterActivity extends AppCompatActivity {
 
         Handler handler = new Handler();
 
+        // Back button clicked, user brought back Login page (LoginActivity)
         mRegisterBackBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -62,17 +63,22 @@ public class RegisterActivity extends AppCompatActivity {
             }
         });
 
+        // Register button clicked
         mRegisterBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                // obtaining respective inputs from the user --> used to be checked if they are valid for creating an account
                 String name = mRegisterNameInput.getText().toString().trim();
                 String email = mRegisterEmailInput.getText().toString().trim();
                 String password1 = mRegisterPasswordInput.getText().toString().trim();
                 String password2 = mRegisterPasswordInput2.getText().toString().trim();
 
+                // User object from User.java
                 mUserObj = new User(name, email, mVerify);
 
 
+                // check for validity of password below:
+                // inputs cannot be empty, password matching, password at least 6 character etc.
                 if (TextUtils.isEmpty(email)){
                     mRegisterEmailInput.setError("Email required.");
                     return;
@@ -98,6 +104,7 @@ public class RegisterActivity extends AppCompatActivity {
                     return;
                 }
 
+                // Account creation
                 fAuth.createUserWithEmailAndPassword(email, password1).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
@@ -145,7 +152,7 @@ public class RegisterActivity extends AppCompatActivity {
             }
         });
     }
-    //    // Adding user information to database and redirect to login screen
+    // Adding user information to database and redirect to login screen
     public void updateUI(FirebaseUser currentUser) {
         String keyId = mDatabase.push().getKey();
         mDatabase.child(keyId).setValue(mUserObj); //adding user info to database

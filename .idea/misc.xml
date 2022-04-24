@@ -3,57 +3,60 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/LENOVO/Documents/SUTD/Term4/Info Sys/Groceriio-v2/app/src/main/res/layout/product_list_activity.xml" value="0.2" />
+        <entry key="..\:/Users/Admin/Groceriio-v2/app/src/main/res/layout/activity_register_fail.xml" value="0.32708333333333334" />
+        <entry key="..\:/Users/Admin/Groceriio-v2/app/src/main/res/layout/activity_register_success.xml" value="0.32708333333333334" />
+        <entry key="..\:/Users/karti/AndroidStudioProjects/Groceriio-v2/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.127" />
+        <entry key="..\:/Users/karti/AndroidStudioProjects/Groceriio-v2/app/src/main/res/drawable/divider_line.xml" value="0.127" />
+        <entry key="..\:/Users/karti/AndroidStudioProjects/Groceriio-v2/app/src/main/res/drawable/search_rectangle.xml" value="0.127" />
+        <entry key="..\:/Users/karti/AndroidStudioProjects/Groceriio-v2/app/src/main/res/drawable/vertical_dotted_line.xml" value="0.127" />
+        <entry key="..\:/Users/karti/AndroidStudioProjects/Groceriio-v2/app/src/main/res/layout/activity_login.xml" value="0.16145833333333334" />
+        <entry key="..\:/Users/karti/AndroidStudioProjects/Groceriio-v2/app/src/main/res/layout/activity_main.xml" value="0.3064516129032258" />
+        <entry key="..\:/Users/karti/AndroidStudioProjects/Groceriio-v2/app/src/main/res/layout/activity_nearest_store.xml" value="0.13854166666666667" />
+        <entry key="..\:/Users/karti/AndroidStudioProjects/Groceriio-v2/app/src/main/res/layout/activity_order_confirmation.xml" value="0.11614583333333334" />
+        <entry key="..\:/Users/karti/AndroidStudioProjects/Groceriio-v2/app/src/main/res/layout/activity_product_page.xml" value="0.259375" />
+        <entry key="..\:/Users/karti/AndroidStudioProjects/Groceriio-v2/app/src/main/res/layout/activity_register.xml" value="0.12083333333333333" />
+        <entry key="..\:/Users/karti/AndroidStudioProjects/Groceriio-v2/app/src/main/res/layout/activity_register_fail.xml" value="0.13854166666666667" />
+        <entry key="..\:/Users/karti/AndroidStudioProjects/Groceriio-v2/app/src/main/res/layout/activity_register_success.xml" value="0.12083333333333333" />
+        <entry key="..\:/Users/karti/AndroidStudioProjects/Groceriio-v2/app/src/main/res/layout/activity_test.xml" value="0.13958333333333334" />
+        <entry key="..\:/Users/karti/AndroidStudioProjects/Groceriio-v2/app/src/main/res/layout/category_list_item.xml" value="0.3241758241758242" />
+        <entry key="..\:/Users/karti/AndroidStudioProjects/Groceriio-v2/app/src/main/res/layout/person.xml" value="0.4" />
+        <entry key="..\:/Users/karti/AndroidStudioProjects/Groceriio-v2/app/src/main/res/layout/product_list_activity.xml" value="0.3723958333333333" />
+        <entry key="..\:/Users/karti/AndroidStudioProjects/Groceriio-v2/app/src/main/res/layout/product_list_item.xml" value="0.1828125" />
+        <entry key="..\:/Users/karti/AndroidStudioProjects/Groceriio-v2/app/src/main/res/layout/product_page.xml" value="0.1828125" />
+        <entry key="..\:/Users/karti/AndroidStudioProjects/Groceriio-v2/app/src/main/res/layout/shopping_list_item.xml" value="0.264" />
+        <entry key="..\:/Users/karti/AndroidStudioProjects/Groceriio-v2/app/src/main/res/layout/shopping_list_page.xml" value="0.2" />
+        <entry key="..\:/Users/karti/AndroidStudioProjects/Groceriio-v2/app/src/main/res/layout/test_unit.xml" value="0.264" />
+        <entry key="..\:/Users/karti/AndroidStudioProjects/Groceriio-v2/app/src/main/res/menu/bottom_navigation_menu.xml" value="0.3723958333333333" />
         <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.15" />
         <entry key="app/src/main/res/drawable/divider_line.xml" value="0.1555" />
-        <entry key="app/src/main/res/drawable/ic_baseline_add_24.xml" value="0.1515" />
-        <entry key="app/src/main/res/drawable/ic_baseline_add_shopping_cart_24.xml" value="0.1515" />
         <entry key="app/src/main/res/drawable/ic_baseline_arrow_back_24.xml" value="0.1555" />
-        <entry key="app/src/main/res/drawable/ic_baseline_arrow_back_ios_24.xml" value="0.1515" />
-        <entry key="app/src/main/res/drawable/ic_baseline_close_24.xml" value="0.1515" />
         <entry key="app/src/main/res/drawable/ic_baseline_email_24.xml" value="0.1" />
-        <entry key="app/src/main/res/drawable/ic_baseline_expand_more_24.xml" value="0.1515" />
-        <entry key="app/src/main/res/drawable/ic_baseline_keyboard_arrow_right_24.xml" value="0.116" />
         <entry key="app/src/main/res/drawable/ic_baseline_location_on_24.xml" value="0.1555" />
-        <entry key="app/src/main/res/drawable/ic_baseline_lock_24.xml" value="0.1515" />
-        <entry key="app/src/main/res/drawable/ic_baseline_person_24.xml" value="0.1515" />
-        <entry key="app/src/main/res/drawable/ic_baseline_remove_24.xml" value="0.1515" />
-        <entry key="app/src/main/res/drawable/ic_baseline_search_24.xml" value="0.1515" />
         <entry key="app/src/main/res/drawable/ic_dest_circle_24.xml" value="0.1555" />
-        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.1515" />
-        <entry key="app/src/main/res/drawable/input_box.xml" value="0.1515" />
-        <entry key="app/src/main/res/drawable/large_button.xml" value="0.1515" />
-        <entry key="app/src/main/res/drawable/quantity_rectangle.xml" value="0.1515" />
         <entry key="app/src/main/res/drawable/record_circle.xml" value="0.1555" />
-        <entry key="app/src/main/res/drawable/search_rectangle.xml" value="0.1515" />
         <entry key="app/src/main/res/drawable/vertical_dotted_line.xml" value="0.1555" />
-        <entry key="app/src/main/res/layout-v23/activity_main.xml" value="0.2534901936848959" />
-        <entry key="app/src/main/res/layout/activity_collection_location.xml" value="0.10142669677734376" />
+        <entry key="app/src/main/res/layout/activity_collection_location.xml" value="0.12195434570312502" />
         <entry key="app/src/main/res/layout/activity_enter_address.xml" value="0.125" />
-        <entry key="app/src/main/res/layout/activity_login.xml" value="0.15889373779296873" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/activity_nearest_store.xml" value="0.26710815429687507" />
-        <entry key="app/src/main/res/layout/activity_order_confirmation.xml" value="0.14269653320312495" />
-        <entry key="app/src/main/res/layout/activity_product_page.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/activity_register.xml" value="0.17225799560546878" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.11" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.30416666666666664" />
+        <entry key="app/src/main/res/layout/activity_nearest_store.xml" value="0.2509780883789063" />
+        <entry key="app/src/main/res/layout/activity_order_confirmation.xml" value="0.11" />
+        <entry key="app/src/main/res/layout/activity_register.xml" value="0.125" />
         <entry key="app/src/main/res/layout/activity_register_fail.xml" value="0.165" />
         <entry key="app/src/main/res/layout/activity_register_success.xml" value="0.125" />
-        <entry key="app/src/main/res/layout/activity_verify_email.xml" value="0.14583333333333334" />
-        <entry key="app/src/main/res/layout/category_list_item.xml" value="0.14583333333333334" />
         <entry key="app/src/main/res/layout/item_page.xml" value="0.25" />
         <entry key="app/src/main/res/layout/product_list.xml" value="0.27924346923828125" />
-        <entry key="app/src/main/res/layout/product_list_activity.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/product_list_item.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/product_list_activity.xml" value="0.2946783447265625" />
+        <entry key="app/src/main/res/layout/product_list_item.xml" value="0.29871368408203136" />
         <entry key="app/src/main/res/layout/product_list_view.xml" value="0.14583333333333334" />
-        <entry key="app/src/main/res/layout/product_page.xml" value="0.27274780273437504" />
-        <entry key="app/src/main/res/layout/search_page.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/shopping_list_item.xml" value="0.23803736576248338" />
+        <entry key="app/src/main/res/layout/product_page.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/search_page.xml" value="0.1833949753333782" />
         <entry key="app/src/main/res/layout/shopping_list_item_view.xml" value="0.16490631103515627" />
-        <entry key="app/src/main/res/layout/shopping_list_page.xml" value="0.16054229736328127" />
+        <entry key="app/src/main/res/layout/shopping_list_page.xml" value="0.25" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

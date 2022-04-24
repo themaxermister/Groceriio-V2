@@ -1,10 +1,10 @@
 package com.example.newgroceriio.Models;
 
-// user class to keep track of registered user and their profile
+// User class to keep track of registered user and their profile
 public class User {
     private String email;
     private String name;
-    private boolean verified;
+    private boolean verified; // verification status
 
     public User(String name, String email, boolean verified) {
         this.email = email;

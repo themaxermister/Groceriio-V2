@@ -65,6 +65,9 @@ public class LoginActivity extends AppCompatActivity {
         fAuth = FirebaseAuth.getInstance();
 
         final String[] name = new String[1];
+
+        // User clicks on Log In button
+        // Log in prohibited if inputs are empty
         mLoginBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -88,6 +91,7 @@ public class LoginActivity extends AppCompatActivity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
 
 
+                        // to prevent the error where there is a null reference which occurs when the account does not exist (unregistered)
                         if(fAuth.getCurrentUser() == null){
                             Toast.makeText(
                                     LoginActivity.this,
@@ -96,6 +100,7 @@ public class LoginActivity extends AppCompatActivity {
                                     .show();
                         }
                         else{
+                            // CASE 1: User log in details correct and account has been verified
                             if (task.isSuccessful() && fAuth.getCurrentUser().isEmailVerified()) {
 
                                 Toast.makeText(
@@ -106,11 +111,11 @@ public class LoginActivity extends AppCompatActivity {
 
                                 fAuth = FirebaseAuth.getInstance();
                                 database = FirebaseDatabase.getInstance();
-                                mDatabase = database.getReference("users_data");
+                                mDatabase = database.getReference("users_data"); // reference to users_data parent in our Firebase
 
                                 String uid = fAuth.getCurrentUser().getUid();
 
-                                // Retrieve User name
+                                // Retrieve User name from database
                                 mDatabase.addListenerForSingleValueEvent(new ValueEventListener() {
 
                                     @Override
@@ -124,6 +129,7 @@ public class LoginActivity extends AppCompatActivity {
 
                                         }
                                         Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                                        // uid and name of respective user is carried over to be used in MainActivity
                                         intent.putExtra("uid", uid);
                                         intent.putExtra("name", name[0]);
                                         startActivity(intent);
@@ -135,6 +141,8 @@ public class LoginActivity extends AppCompatActivity {
                                     }
                                 });
                             }
+                            // CASE 2: User log in details correct and account has NOT been verified
+                            // user will be redirected to RegisterFailActivity where there is an option to resend verification link
                             else if (task.isSuccessful() && !fAuth.getCurrentUser().isEmailVerified() ){
 
                                 Toast.makeText(

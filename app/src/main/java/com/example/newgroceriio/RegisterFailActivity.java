@@ -15,6 +15,7 @@ import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
 
+// User brought here only if user attempts to log in  with an unverified account
 public class RegisterFailActivity extends AppCompatActivity {
     Button mRegFailSendBtn, mRegFailBackBtn;
     FirebaseAuth fAuth;
@@ -25,10 +26,11 @@ public class RegisterFailActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register_fail);
 
-        mRegFailSendBtn = findViewById(R.id.regFailResendBtn);
-        mRegFailBackBtn = findViewById(R.id.regFailBackBtn);
+        mRegFailSendBtn = findViewById(R.id.regFailResendBtn); // "Resend Verification Email" button
+        mRegFailBackBtn = findViewById(R.id.regFailBackBtn); // BACK button
         fAuth = FirebaseAuth.getInstance();
 
+        // Back button sends user back to login page (LoginActivity)
         mRegFailBackBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -36,14 +38,14 @@ public class RegisterFailActivity extends AppCompatActivity {
             }
         });
 
+        // When "Resend Verification Email" button clicked, Firebase will send another verification link to user email
         mRegFailSendBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 mRegFailSendBtn.setEnabled(false);
 
-                // Send VERIFICATION LINK
-                mHandler.postDelayed(mToastRunnable, 5000);
-
+                // Send VERIFICATION LINK code below:
+                mHandler.postDelayed(mToastRunnable, 5000); // "Resend Verification Email" button unclickable for 5 seconds to prevent spamming of email
                 fAuth.getCurrentUser().sendEmailVerification().addOnSuccessListener(new OnSuccessListener<Void>() {
                     @Override
                     public void onSuccess(Void unused) {
@@ -65,6 +67,7 @@ public class RegisterFailActivity extends AppCompatActivity {
     private Runnable mToastRunnable = new Runnable() {
         @Override
         public void run() {
+            // "Resend Verification Email" button unclickable for 5 seconds to prevent spamming of email
             mRegFailSendBtn.setEnabled(true);
         }
     };

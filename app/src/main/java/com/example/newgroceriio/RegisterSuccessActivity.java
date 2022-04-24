@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+// User will be brought here if they have registered successfully
 public class RegisterSuccessActivity extends AppCompatActivity {
     Button mRegisterSuccessBtn;
 
@@ -17,6 +18,7 @@ public class RegisterSuccessActivity extends AppCompatActivity {
 
         mRegisterSuccessBtn = findViewById(R.id.registerSuccessBtn);
 
+        // Clicking the "Back to Login" button brings the user back to the login page
         mRegisterSuccessBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
